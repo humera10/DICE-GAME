@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(146, 150, 148); */
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(95, 95, 95);
+    height: 100vh;
+}
+
+
+
+#pigame{
+
+    height: 600px;
+    width: 100%;
+
+    /* background-color: rgb(56, 59, 60); */
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    color: white;
+    display: flex;
+
+
+}
+
+section{
+    
+    /* 👇 This code divede a Horizontally in equal parts */
+    /* background-image: linear-gradient(0deg, rgb(49, 50, 53) 50% , #949191 50%);  */
+
+
+    /* 👇 This code divede a vertically in equal parts */
+    /* background-image: linear-gradient(90deg, rgb(49, 50, 53)  , #949191);  */
+
+    background-image: linear-gradient(90deg, #BDC7C9, #EAD3CB);
+
+
+
+}
+
+.player{
+    /* background-color: rgb(32, 15, 48); */
+    background-color: #2B4F60;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 80px 140px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.sec1 .score1{
+    font-size: 40px;
+    color: #2B4F60;
+}
+
+.current{
+    background-color: #845460;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 220px 140px;
+    padding: 10px;
+}
+
+.current p{
+    margin-top: 25px;
+}
+
+.btn{
+    position: absolute;
+    left: 47%;
+    top: 500px;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #845460;
+    background-color: #d8d5d5;
+    /* box-shadow: 1px 1px 8px(black); */
+    box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    
+}
+
+.btn.hold:hover{
+    background-color: #2B4F60;
+    color: #FFF;
+}
+
+.btn.roll{
+
+    position: absolute;
+    left: 45%;
+    top: 420px;
+    width: 150px;
+
+}
+
+.btn.roll:hover{
+    background-color: #2B4F60;
+    color: #FFF;
+}
+
+
+.btn.new{
+
+    position: absolute;
+    left: 46%;
+    top: 100px;
+    width: 120px;
+
+}
+
+.btn.new:hover{
+    background-color: #845460;
+    color: #FFF;
+
+}
+
+
+
+
+img{
+
+    position: absolute;
+    left: 48.4%;
+    top: 220px;
+
+}
+
+/* img:hover{
+    transform: rotate(360);
+} */
+
+/* Media query */
+
+@media (min-width:300px)  and (max-width: 600px){
+    section{
+        background-image: linear-gradient(90deg, #BDC7C9 , #EAD3CB );
+        overflow: hidden;
+    }
+
+    .player{
+        margin: 40px 50px;
+        padding: 10px 10px;
+        font-size: 16px;
+        /* height: 80px;
+        width: 80px; */
+    }
+
+    .current{
+        margin: 200px 60px;
+        padding: 10px;
+    }
+
+    img{
+
+        position: absolute;
+        left: 45%;
+        top: 220px;
+    
+    }
+
+    .btn{
+        position: absolute;
+        left: 40%;
+        top: 600px;
+        height: 50px;
+        width: 80px;
+        
+    }
+
+    .btn.roll{
+
+        position: absolute;
+        left: 40%;
+        top: 420px;
+        width: 80px;
+    
+    }
+
+    .btn.new{
+
+        position: absolute;
+        left: 40%;
+        top: 100px;
+        width: 80px;
+    
+    }
+    
+}
